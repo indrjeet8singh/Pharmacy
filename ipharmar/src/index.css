@@ -1,0 +1,298 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+   background-color: #f0f4f8;
+}
+
+.outletpage{
+  margin-top: 110px;
+}
+
+.navbar-brand img {
+      width:150px;
+      height: 80px;
+    }
+    .navbar {
+      background-color: #f0f4f8;
+      border-bottom: 1px solid #d3d3d3;
+    }
+    .nav-link {
+      color: #333;
+      font-weight: 500;
+    }
+    .nav-link.active {
+      color: #28a745;
+      border-bottom: 2px solid #28a745;
+    }
+    .nav-link:hover {
+      color: #28a745;
+    }
+    .search-bar {
+      border: 1px solid #d3d3d3;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+    .search-bar::placeholder {
+      color: #aaa;
+    }
+    .search-container {
+  position: relative;
+ 
+  max-width: 200px; /* Adjust as needed */
+}
+
+.search-bar {
+  width: 100%;
+  padding: 5px 5px 5px 45px; /* Left padding to make space for the icon */
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #c5c6c6; /* Optional: Highlight on focus */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666; /* Icon color */
+  font-size: 25px; /* Adjust icon size */
+}
+    @media (max-width:768px) {
+      .mobileimg{
+        
+        height: 300px;
+      }
+       .fontmobile{
+        padding-top: 30px;
+      font-size: 20px;
+    }
+    .mobilepara{
+      font-size: 13px;
+    }
+    }
+    .swiper{
+      margin-top: -4px;
+    }
+    .webtextcolor{
+      color: #23aa6e;
+    }
+  .custom-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  min-height: 365px;
+  border: none;
+
+  position: relative;
+}
+
+.card-body {
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover .card-body {
+  transform: translateY(-20px); /* slide up the content */
+}
+
+.button-area {
+  opacity: 0;
+  margin-bottom: 20px;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.custom-card:hover .button-area {
+  opacity: 1;
+  transform: translateY(0);
+}
+.solution-bg-color{
+  background-color: beige;
+}
+.text-yellow {
+      color: #fbbf24;
+    }
+    .testimonial-card {
+      background-color: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+      padding: 1.5rem;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    .testimonial-card-left {
+      transform: translateX(-1rem);
+    }
+    .testimonial-card-left-sm {
+      transform: translateX(-0.5rem);
+    }
+    .testimonial-title {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #111827;
+      margin-bottom: 0.25rem;
+    }
+    .testimonial-subtitle {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-bottom: 1rem;
+    }
+    .testimonial-text {
+      font-size: 0.875rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    .dot-yellow {
+      position: absolute;
+      top: -1rem;
+      right: -1.5rem;
+      font-size: 3rem;
+      color: #fde68a;
+      user-select: none;
+      pointer-events: none;
+      line-height: 1;
+    }
+    .dot-gray {
+      position: absolute;
+      top: -1.5rem;
+      right: -2rem;
+      font-size: 4.5rem;
+      color: #e5e7eb;
+      user-select: none;
+      pointer-events: none;
+      line-height: 1;
+    }
+    .footerwala-bg{
+      background: #299646;
+      color:white !important;
+    }
+    .home-image-container {
+            position: relative;
+           width: 100%;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-100%, -100%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 15px;
+            /* border-radius: 5px; */
+            text-align: center;
+        }
+        @media (max-width:768px) {
+          .mobileheight{
+            height: 100%;
+          }
+           .home-image-container {
+            position: relative;
+           width: 100%;
+           height: 400px;
+        }
+        }
+  .container-fullheight {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.angled-container {
+  width: 1000px;
+  height: 400px;
+  /* max-width: 100%; */
+  position: relative;
+  transform: rotate(0deg);
+  transform-origin: center center;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #13b94d;
+clip-path: polygon(0 0, 43% 0, 100% 100%, 57% 100%); overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .angled-container {
+    width: 35rem;
+    height:24rem;
+  }
+}
+
+.angled-container img {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%);
+}
+
+.img1 {
+  left: 0;
+  width: 5rem;
+}
+
+.img2 {
+  left: 5rem;
+  width: 4rem;
+}
+
+.img3 {
+  left: 9rem;
+  width: 4rem;
+}
+
+.img4 {
+  left: 13rem;
+  width: 5rem;
+}
+
+.overlay-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform: rotate(-60deg);
+  transform-origin: center center;
+}
+.bg-forImpact{
+  background: #ccf1ff;
+}
+/* In your CSS file or inside a <style> tag */
+.scale-hover {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.scale-hover:hover {
+  transform: scale(1.05);
+}
+.vetical-green-pole{
+width: 10px;
+height: 300px;
+background: green;
+}
+
+@media (max-width:768px) {
+  .vetical-green-pole{
+width: 10px;
+height: 300px;
+background: green;
+display: none;
+}
+}
+.footer-margin{
+  margin-bottom: 0px !important;
+}
