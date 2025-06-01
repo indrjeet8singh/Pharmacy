@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 // Images
-import slide1 from "/images/4.png";
+import slide1 from "/images/1.png";
 import slide2 from "/images/2.png";
 import slide3 from "/images/3.png";
 import playstore from "/images/playstore.png";
