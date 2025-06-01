@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaExclamationTriangle } from 'react-icons/fa';
-import './ErrorPage.css'; // Optional for custom styling
+
 
 const ErrorPage = () => {
   return (
