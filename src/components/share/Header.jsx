@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // Import NavLink for routing
+import { NavLink } from "react-router-dom";
 import iphamarlogo from '/images/logo.png';
 import { MdSearch } from "react-icons/md";
-import { HiBars3 } from "react-icons/hi2";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState(""); // Add state for search input
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -17,6 +18,15 @@ const Header = () => {
     { name: "Contact", path: "/ContactUs" },
     { name: "About", path: "/about" },
   ];
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+    // Add search logic here (e.g., filter results or trigger a search API)
+  };
 
   return (
     <nav className="navbar navbar-expand-lg">
@@ -34,27 +44,23 @@ const Header = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={toggleMenu}
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
         >
-          <HiBars3 className="navbar-toggler-icon" />
+          {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
 
         {/* Nav Links & Search Bar */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <li className="nav-item" key={item.name}>
                 <NavLink
-                  className={({ isActive }) =>
-                    `nav-link ${isActive ? "active" : ""}`
-                  }
+                  className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
                   to={item.path}
-                  onClick={() => setActiveIndex(index)}
-                  aria-current={index === activeIndex ? "page" : undefined}
+                  onClick={() => setIsMenuOpen(false)} // Close menu on link click (mobile)
                 >
                   {item.name}
                 </NavLink>
@@ -62,12 +68,14 @@ const Header = () => {
             ))}
           </ul>
 
-          <div className="search-container">
+          <div className="search-container ">
             <MdSearch className="search-icon" />
             <input
               type="text"
               className="search-bar"
               placeholder="Search..."
+              value={searchQuery}
+              onChange={handleSearch}
             />
           </div>
         </div>
