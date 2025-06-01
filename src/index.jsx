@@ -13,11 +13,14 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import Faq from "./components/pages/Faq";
 import Career from "./components/pages/Career";
 import ContactUs from "./components/pages/ContactUs";
+import ErrorPage from "./components/share/ErrorPage";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
+          <Route path="*" element={<ErrorPage />} />
+
         <Route path="/" element={<LandingPage />}>
           <Route path="" element={<HomePage />} />
           <Route path="about" element={<About />} />
