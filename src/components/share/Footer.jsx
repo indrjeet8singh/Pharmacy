@@ -2,6 +2,7 @@ import React from "react";
 import iphamarlogo from "/images/whiteLogo.png";
 import digitals from "/images/digitals.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,44 +30,44 @@ const Footer = () => {
               <h5>Section</h5>
               <ul class="nav flex-column text-white">
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     FAQs
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -74,44 +75,44 @@ const Footer = () => {
               <h5>Section</h5>
               <ul class="nav flex-column text-white">
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="PrivacyPolicy"
+                  <Link
+                   to="PrivacyPolicy"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     Privacy policy
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="TermsAndConditions"
+                  <Link
+                   to="TermsAndConditions"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     Terms & Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mb-2">
-                  <a
-                    href="#"
+                  <Link
+                   to="#"
                     class="nav-link text-light p-0 text-body-secondary"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
